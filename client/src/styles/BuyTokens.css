@@ -1,0 +1,125 @@
+.token-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #0b0b12, #141421);
+}
+
+/* Card wrapper */
+.token-card {
+    background: rgba(20, 20, 33, 0.85);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(139, 92, 246, 0.25);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    width: 360px;
+    text-align: center;
+}
+
+.token-title {
+    color: #e9d5ff;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* Input field */
+.token-input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    background: #0b0b12;
+    border: 1px solid rgba(139, 92, 246, 0.4);
+    color: #e9d5ff;
+    font-size: 16px;
+    outline: none;
+}
+
+.token-input::placeholder {
+    color: #9f9fbd;
+}
+
+.token-input:focus {
+    border-color: #a855f7;
+    box-shadow: 0 0 10px rgba(168, 85, 247, 0.4);
+}
+
+/* Button */
+.token-button {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 14px;
+    cursor: pointer;
+
+    color: #e9d5ff;
+    background: linear-gradient(135deg, #7c3aed, #a855f7);
+    border: none;
+
+    box-shadow:
+        0 0 20px rgba(168, 85, 247, 0.35),
+        0 10px 30px rgba(0, 0, 0, 0.6);
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.token-button:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow:
+        0 0 30px rgba(168, 85, 247, 0.55),
+        0 16px 40px rgba(0, 0, 0, 0.8);
+}
+
+.token-button:active {
+    transform: scale(0.97);
+}
+
+/* Status text */
+.tx-status {
+    margin-top: 18px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Pending */
+.tx-status.pending {
+    color: #a855f7;
+}
+
+/* Success */
+.tx-status.success {
+    color: #22c55e;
+}
+
+/* Error */
+.tx-status.error {
+    color: #ef4444;
+}
+
+/* Disabled states */
+.token-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.token-input:disabled {
+    opacity: 0.6;
+}
+
+.tx-from {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #c4b5fd;
+    word-break: break-all;
+}
+
+.tx-address {
+    display: block;
+    margin-top: 4px;
+    color: #a855f7;
+    font-family: monospace;
+}

@@ -1,0 +1,30 @@
+# Node modules
+/node_modules
+
+# Compilation output
+/dist
+
+# pnpm deploy output
+/bundle
+
+# Hardhat Build Artifacts
+/artifacts
+
+# Hardhat compilation (v2) support directory
+/cache
+
+# Typechain output
+/types
+
+# Hardhat coverage reports
+/coverage
+
+# env file
+.env
+
+
+
+# useless files
+/scripts/uploadToIPFS.js
+/scripts/deploy_nft.ts
+/contracts/MyNFT.sol

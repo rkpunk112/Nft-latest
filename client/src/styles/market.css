@@ -1,0 +1,70 @@
+.all__category__filter select,
+.all__items__filter select,
+.filter__right select {
+  padding: 8px 25px;
+  font-size: 0.9rem;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: #343444;
+  border-radius: 5px;
+}
+
+/* Auction Input Styles */
+.auction__input {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 6px;
+  border-radius: 5px;
+  border: 1px solid #27ae60;
+  background: #1a1a2e;
+  color: #fff;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.auction__input:focus {
+  border-color: #2ecc71;
+}
+
+/* Auction Duration Select Dropdown */
+.auction__duration__select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 6px;
+  border-radius: 5px;
+  border: 1px solid #8e44ad;
+  background: #1a1a2e;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+  outline: none;
+  max-height: none;
+  appearance: auto;
+}
+
+.auction__duration__select:focus {
+  border-color: #9b59b6;
+}
+
+.auction__duration__select option {
+  background: #1a1a2e;
+  color: #fff;
+  padding: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+  .all__category__filter select,
+  .all__items__filter select,
+  .filter__right select {
+    padding: 5px 20px;
+    font-size: 0.6rem;
+  }
+
+  .auction__input,
+  .auction__duration__select {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+}

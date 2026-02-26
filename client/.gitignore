@@ -1,0 +1,32 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# me 
+src/pages/SendToken.jsx
+.env
+
+# useless
+/src/build-info/solc-0_8_28-2947eec322164b601cf386925f7f1e2b9b0b86cd.json
+/src/build-info/solc-0_8_28-2947eec322164b601cf386925f7f1e2b9b0b86cd.output.json
+/src/contracts/MyNFT.sol
