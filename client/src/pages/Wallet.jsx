@@ -37,10 +37,13 @@ const Wallet = () => {
   const { connectWallet } = useBlockchainContext(); // Get the connectWallet function from the context
 
   const handleWalletClick = (title) => {
-    if (title === "Metamask") {
-      connectWallet(); // Execute connectWallet function when Metamask is clicked
-    }
-  };
+  console.log("Clicked:", title);
+  
+  if (title === "Metamask") {
+    console.log("Calling connectWallet...");
+    connectWallet();
+  }
+};
 
   return (
     <>
