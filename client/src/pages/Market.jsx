@@ -13,7 +13,7 @@ const MarketNFTCard = ({ nft }) => {
     endAuctionEarly,
     currentAccount,
   } = useBlockchainContext();
-
+  const [showActions, setShowActions] = useState(false);
   const [listPrice, setListPrice] = useState("");
   const [auctionPrice, setAuctionPrice] = useState("");
   const [auctionDuration, setAuctionDuration] = useState("300");

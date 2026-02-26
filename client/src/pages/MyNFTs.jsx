@@ -6,7 +6,8 @@ import CommonSection from "../components/ui/Common-section/CommonSection";
 import "../styles/market.css";
 
 const MyNFTCard = ({ nft }) => {
-  const { listNFTForSale, createAuction } = useBlockchainContext();
+  const { listNFTForSale, createAuction, currentAccount } =
+    useBlockchainContext();
   const [mode, setMode] = useState(null);
   const [listPrice, setListPrice] = useState("");
   const [auctionPrice, setAuctionPrice] = useState("");
