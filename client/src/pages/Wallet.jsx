@@ -67,7 +67,7 @@ const Wallet = () => {
                   className={`wallet__item ${
                     item.title === "Metamask" ? "metamask" : "faded"
                   }`}
-                  onClick={() => handleWalletClick(item.title)}
+                  onClick={item.title === "Metamask" ? connectWallet : undefined}
                 >
                   <span>
                     <i className={item.icon}></i>
