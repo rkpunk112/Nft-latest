@@ -31,6 +31,7 @@ export const BlockchainProvider = ({ children }) => {
   const [currentAccount, setCurrentAccount] = useState("");
   const [allNFTs, setAllNFTs] = useState([]); // all minted NFTs with metadata
   const [activeAuctions, setActiveAuctions] = useState([]); // live auctions from chain
+  // eslint-disable-next-line no-unused-vars
   const [loading, setLoading] = useState(false);
 
   // ─── Helper: Fetch IPFS metadata ────────────────────────────────────────────
