@@ -1,7 +1,6 @@
 import "./app.css";
 import Layout from "./components/Layout/Layout";
 import { Toaster } from "react-hot-toast";
-import MyBids from "./pages/MyBids";
 
 // Inside your routes:
 
