@@ -1,8 +1,6 @@
 import "./app.css";
 import Layout from "./components/Layout/Layout";
 import { Toaster } from "react-hot-toast";
-// eslint-disable-next-line no-unused-vars
-import MyBids from "./pages/MyBids";
 
 // Inside your routes:
 

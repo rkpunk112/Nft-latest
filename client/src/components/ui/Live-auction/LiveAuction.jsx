@@ -16,9 +16,6 @@ const formatTimeLeft = (seconds) => {
 };
 
 const AuctionCard = ({ auction }) => {
-  // eslint-disable-next-line no-unused-vars
-  const { placeBid, endAuction, currentAccount, loadActiveAuctions } =
-    useBlockchainContext();
   const [bidAmount, setBidAmount] = useState("");
   const [showBidInput, setShowBidInput] = useState(false);
   const [timeLeft, setTimeLeft] = useState(auction.timeLeft);
@@ -29,8 +26,6 @@ const AuctionCard = ({ auction }) => {
     auction.seller?.toLowerCase() === currentAccount?.toLowerCase();
   const isWinner =
     auction.highestBidder?.toLowerCase() === currentAccount?.toLowerCase();
-  // eslint-disable-next-line no-unused-vars
-  const canEnd = isExpired && (isSeller || isWinner || true);
 
   // ── Live countdown timer ─────────────────────────────────────────
   useEffect(() => {
