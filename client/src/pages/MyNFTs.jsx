@@ -212,7 +212,7 @@ const MyNFTCard = ({ nft }) => {
 };
 
 const MyNFTs = () => {
-  const { allNFTs } = useBlockchainContext();
+  const { allNFTs, currentAccount } = useBlockchainContext();
 
   // Filter NFTs owned by current account
   const myNFTs = allNFTs.filter(
