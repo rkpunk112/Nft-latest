@@ -18,6 +18,7 @@ const formatTimeLeft = (seconds) => {
 const AuctionCard = ({ auction }) => {
   // const { placeBid, endAuction, currentAccount, loadActiveAuctions } =
   //   useBlockchainContext();
+  const { placeBid, endAuction, currentAccount } = useBlockchainContext();
   const [bidAmount, setBidAmount] = useState("");
   const [showBidInput, setShowBidInput] = useState(false);
   const [timeLeft, setTimeLeft] = useState(auction.timeLeft);
