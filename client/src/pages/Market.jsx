@@ -15,8 +15,6 @@ const MarketNFTCard = ({ nft }) => {
   } = useBlockchainContext();
   // eslint-disable-next-line no-unused-vars
   const [showActions, setShowActions] = useState(false);
-  // eslint-disable-next-line no-unused-vars
-  const [_, setShowActions] = useState(false);
   const [listPrice, setListPrice] = useState("");
   const [auctionPrice, setAuctionPrice] = useState("");
   const [auctionDuration, setAuctionDuration] = useState("300");
